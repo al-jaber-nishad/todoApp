@@ -1,0 +1,97 @@
+
+/* Header */
+
+body{
+  background-color: rgb(240, 240, 240);
+}
+
+.container{
+  width: 70%;
+}
+
+.header {
+  background-color: rgba(255, 81, 0, 0.849);
+  padding: 60px 40px 60px;
+}
+
+.header h1 a{
+  text-decoration: none;
+  color: white;
+}
+
+.header h1 a:hover{
+  color: rgb(226, 226, 226);
+}
+/* Input Section */
+
+.inputTask {
+  margin: 20px 0;
+}
+
+.inputTask .input {
+  width: 79%;
+  height: 35px;
+  vertical-align: middle;
+  border-radius: 4px;
+}
+
+.inputTask .details_input {
+  width: 79%;
+  height: 120px;
+  vertical-align: middle;
+  border-radius: 4px;
+}
+
+.inputTask .button{
+  width: 20%;
+}
+
+/* Task Section  */
+
+.showTask{
+  border: 1px solid black;
+  border-radius: 4px;
+  position: relative;
+}
+
+.showTask li{
+  margin: 15px 0;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 5px;
+  /* margin-left: 3px; */
+  vertical-align: middle;
+  padding: 11px 0 1px 0;
+  list-style-type: none;
+  margin-right: 20px;
+  border-radius: 3px;
+
+}
+
+.showTask li p{
+  display: inline-block;
+  width: 69%;
+  padding-left: 15px;
+  /* margin-top: 5px; */
+}
+
+ol li button{
+  /* position: fixed; */
+  margin-right: 0;
+  padding-top: 5px;
+}
+
+.showTask li div{
+  display: inline-block;
+  width: 30%;
+}
+
+
+/* Delete Page  */
+
+.del_div{
+  text-align: center;
+}
+
+.del_item{
+  color: red;
+}

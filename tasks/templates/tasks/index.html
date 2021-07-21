@@ -1,0 +1,46 @@
+{% extends 'tasks/tasks_base.html' %}
+{% load static %}
+
+{% block body_block %}
+
+
+  <div class="inputTask">
+    <form method="POST">
+      {% csrf_token %}
+      {{ form.title }}
+      <input class="button btn btn-primary" type="submit" value="Add Task">
+    </form>
+    
+  </div>
+
+
+  {% if tasks %}
+    <div class="showTask">
+  {% else %}
+    <div>
+  {% endif %}
+
+    <ol>
+      {% for item in tasks %}
+        
+      <div class="taskItem">
+        <li class="single_task">
+          {% if item.complete %}
+            <p><strike>{{ item }}</strike></p>
+          {% else %}
+            <p>{{ item }}</p>
+          {% endif %}
+          <div class="right-btn">
+            <a href="{% url 'tasks:delete' item.id %}" class="btn btn-danger">Delete</a>
+            <a href="{% url 'tasks:update' item.id %}" class="btn btn-success">Update</a>
+          </div>
+        </li>
+      </div>            
+        
+      {% endfor %}
+    </ol>
+  </div>
+
+
+{% endblock body_block %}
+  
