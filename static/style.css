@@ -15,6 +15,26 @@ body{
   }
 }
 
+@media only screen and (min-width: 600px) and (max-width:899px){
+  body {
+    background-color: lightblue;
+  }
+  .container{
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  body {
+    background-color: lightblue;
+  }
+  .container{
+    width: 50%;
+  }
+}
+
+
+
 /* @media screen(min-width:800px) {
   .container{
     width: 50%;
@@ -79,6 +99,10 @@ body{
   position: relative;
 }
 
+.showTask ol{
+  padding-right: 2rem;
+}
+
 .showTask li{
   margin: 15px 0;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -109,7 +133,7 @@ ol li button{
   display: inline-block;
   /* width: 30%; */
   position: absolute;
-  right: 20px;
+  right: 3.5rem;
 }
 
 .right-btn{
