@@ -24,9 +24,9 @@ STATIC_DIR = os.path.join(BASE_DIR, 'static')
 SECRET_KEY = 'django-insecure-aa3*p=(w%e(lktd(r7$b%d&i4pj(bc2!tu_y2^=q+-4$b)9+xq'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1:8000', 'insta-todo.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'insta-todo.herokuapp.com']
 
 
 # Application definition
