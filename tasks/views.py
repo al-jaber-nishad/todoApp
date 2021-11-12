@@ -18,7 +18,7 @@ def index(request):
       form.save()
       return HttpResponseRedirect('/')
   
-  return render(request, 'tasks/index.html', {'form': form, 'tasks':tasks})
+  return render(request, 'tasks/index.html', {'form': form, 'tasks': tasks})
 
 
 def updateTask(request, pk):
